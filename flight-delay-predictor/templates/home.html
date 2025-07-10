@@ -1,0 +1,282 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Flight Delay Predictor</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            min-height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            padding: 20px;
+        }
+
+        .container {
+            background: rgba(255, 255, 255, 0.95);
+            backdrop-filter: blur(10px);
+            border-radius: 20px;
+            padding: 40px;
+            box-shadow: 0 20px 40px rgba(0, 0, 0, 0.1);
+            max-width: 600px;
+            width: 100%;
+            transform: translateY(0);
+            transition: transform 0.3s ease;
+        }
+
+        .container:hover {
+            transform: translateY(-5px);
+        }
+
+        h2 {
+            color: #333;
+            text-align: center;
+            margin-bottom: 30px;
+            font-size: 2.5em;
+            font-weight: 300;
+            position: relative;
+        }
+
+        h2::after {
+            content: '';
+            position: absolute;
+            bottom: -10px;
+            left: 50%;
+            transform: translateX(-50%);
+            width: 100px;
+            height: 3px;
+            background: linear-gradient(45deg, #667eea, #764ba2);
+            border-radius: 2px;
+        }
+
+        .form-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 20px;
+            margin-bottom: 30px;
+        }
+
+        .form-group {
+            position: relative;
+        }
+
+        label {
+            display: block;
+            margin-bottom: 8px;
+            color: #555;
+            font-weight: 500;
+            font-size: 0.95em;
+        }
+
+        input[type="number"], input[type="text"] {
+            width: 100%;
+            padding: 15px;
+            border: 2px solid #e0e0e0;
+            border-radius: 10px;
+            font-size: 16px;
+            transition: all 0.3s ease;
+            background: white;
+        }
+
+        input[type="number"]:focus, input[type="text"]:focus {
+            outline: none;
+            border-color: #667eea;
+            box-shadow: 0 0 0 3px rgba(102, 126, 234, 0.1);
+            transform: translateY(-2px);
+        }
+
+        input[type="submit"] {
+            width: 100%;
+            padding: 18px;
+            background: linear-gradient(45deg, #667eea, #764ba2);
+            color: white;
+            border: none;
+            border-radius: 10px;
+            font-size: 18px;
+            font-weight: 600;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+        }
+
+        input[type="submit"]:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 10px 20px rgba(102, 126, 234, 0.3);
+        }
+
+        input[type="submit"]:active {
+            transform: translateY(0);
+        }
+
+        .form-group::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            height: 2px;
+            background: linear-gradient(45deg, #667eea, #764ba2);
+            border-radius: 1px;
+            transform: scaleX(0);
+            transition: transform 0.3s ease;
+        }
+
+        .form-group:focus-within::before {
+            transform: scaleX(1);
+        }
+
+        .helper-text {
+            font-size: 0.85em;
+            color: #777;
+            margin-top: 5px;
+        }
+
+        .icon {
+            position: absolute;
+            right: 15px;
+            top: 50%;
+            transform: translateY(-50%);
+            color: #ccc;
+            font-size: 18px;
+            pointer-events: none;
+        }
+
+        @media (max-width: 768px) {
+            .container {
+                padding: 30px 20px;
+            }
+
+            h2 {
+                font-size: 2em;
+            }
+
+            .form-grid {
+                grid-template-columns: 1fr;
+            }
+        }
+
+        @keyframes fadeIn {
+            from { opacity: 0; transform: translateY(20px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+
+        .form-group {
+            animation: fadeIn 0.5s ease forwards;
+        }
+
+        .form-group:nth-child(1) { animation-delay: 0.1s; }
+        .form-group:nth-child(2) { animation-delay: 0.2s; }
+        .form-group:nth-child(3) { animation-delay: 0.3s; }
+        .form-group:nth-child(4) { animation-delay: 0.4s; }
+        .form-group:nth-child(5) { animation-delay: 0.5s; }
+        .form-group:nth-child(6) { animation-delay: 0.6s; }
+        .form-group:nth-child(7) { animation-delay: 0.7s; }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h2>✈️ Flight Delay Predictor</h2>
+        <form action="/predict" method="post">
+            <div class="form-grid">
+                <div class="form-group">
+                    <label>📅 Month</label>
+                    <input type="number" name="month" min="1" max="12" placeholder="1-12" required>
+                    <div class="helper-text">Enter month (1-12)</div>
+                </div>
+
+                <div class="form-group">
+                    <label>📆 Day</label>
+                    <input type="number" name="day" min="1" max="31" placeholder="1-31" required>
+                    <div class="helper-text">Enter day of month (1-31)</div>
+                </div>
+
+                <div class="form-group">
+                    <label>📊 Day of Week</label>
+                    <input type="number" name="day_of_week" min="1" max="7" placeholder="1-7" required>
+                    <div class="helper-text">Monday=1, Tuesday=2, ..., Sunday=7</div>
+                </div>
+
+                <div class="form-group">
+                    <label>🏢 Airline</label>
+                    <input type="text" name="airline" placeholder="AA, DL, UA, etc." maxlength="3" required>
+                    <div class="helper-text">Enter airline code (e.g., AA, DL, UA)</div>
+                </div>
+
+                <div class="form-group">
+                    <label>🛫 Origin Airport</label>
+                    <input type="text" name="origin" placeholder="JFK, LAX, ORD, etc." maxlength="3" required>
+                    <div class="helper-text">Enter 3-letter airport code</div>
+                </div>
+
+                <div class="form-group">
+                    <label>🛬 Destination Airport</label>
+                    <input type="text" name="dest" placeholder="JFK, LAX, ORD, etc." maxlength="3" required>
+                    <div class="helper-text">Enter 3-letter airport code</div>
+                </div>
+
+                <div class="form-group" style="grid-column: 1 / -1;">
+                    <label>🕐 Scheduled Departure Time</label>
+                    <input type="number" name="scheduled_dep" min="0" max="2359" placeholder="0800 for 8:00 AM" required>
+                    <div class="helper-text">Enter time in HHMM format (e.g., 0800 for 8:00 AM, 1430 for 2:30 PM)</div>
+                </div>
+            </div>
+
+            <input type="submit" value="🔮 Predict Flight Delay">
+        </form>
+    </div>
+
+    <script>
+        // Add smooth animations and interactions
+        document.addEventListener('DOMContentLoaded', function() {
+            const inputs = document.querySelectorAll('input[type="number"], input[type="text"]');
+
+            inputs.forEach(input => {
+                input.addEventListener('input', function() {
+                    if (this.value) {
+                        this.style.borderColor = '#4CAF50';
+                    } else {
+                        this.style.borderColor = '#e0e0e0';
+                    }
+                });
+
+                input.addEventListener('blur', function() {
+                    if (!this.value) {
+                        this.style.borderColor = '#e0e0e0';
+                    }
+                });
+            });
+
+            // Auto-uppercase airline and airport codes
+            const airlineInput = document.querySelector('input[name="airline"]');
+            const originInput = document.querySelector('input[name="origin"]');
+            const destInput = document.querySelector('input[name="dest"]');
+
+            [airlineInput, originInput, destInput].forEach(input => {
+                input.addEventListener('input', function() {
+                    this.value = this.value.toUpperCase();
+                });
+            });
+
+            // Form submission with loading state
+            const form = document.querySelector('form');
+            const submitBtn = document.querySelector('input[type="submit"]');
+
+            form.addEventListener('submit', function() {
+                submitBtn.value = '🔄 Predicting...';
+                submitBtn.disabled = true;
+                submitBtn.style.background = '#ccc';
+            });
+        });
+    </script>
+</body>
+</html>
