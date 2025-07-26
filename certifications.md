@@ -26,26 +26,42 @@ I have also recorded a video showing all my completed learning paths and achieve
 
 
 
-## ✅ Google Cloud Skills Boost Learning Paths
-*(Completed Learning Paths with official completion links)*
+## 🖼 Proof of Completion (Screenshots)
 
-3. **Beginner: Introduction to Generative AI Learning Path**  
-   [View Completion Link](https://www.cloudskillsboost.google/paths/118)
+### Beginner: Introduction to Generative AI
 
-4. **Intermediate: Gemini for Google Cloud Learning Path**  
-   [View Completion Link](https://www.cloudskillsboost.google/paths/236)
+![Beginner Screenshot 1](images/beginner-1.png)  
+![Beginner Screenshot 2](images/beginner-2.png)  
+![Beginner Screenshot 3](images/beginner-3.png)  
 
-5. **Advanced: Generative AI for Developers Learning Path**  
-   [View Completion Link](https://www.cloudskillsboost.google/paths/183)
+---
+
+### Intermediate: Gemini for Google Cloud
+
+![Intermediate Screenshot 1](images/intermediate-1.png)  
+![Intermediate Screenshot 2](images/intermediate-2.png)  
+![Intermediate Screenshot 3](images/intermediate-3.png)  
+![Intermediate Screenshot 4](images/intermediate-4.png)  
+
+---
+
+### Advanced: Generative AI for Developers
+
+![Advanced Screenshot 1](images/advanced-1.png)  
+![Advanced Screenshot 2](images/advanced-2.png)  
+![Advanced Screenshot 3](images/advanced-3.png)  
+![Advanced Screenshot 4](images/advanced-4.png)  
+![Advanced Screenshot 5](images/advanced-5.png)  
 
 
 
 
 
 ---
-
 ### 💡 Notes:
-- My IBM badges are verified on **Credly** — you can find the actual badge URLs linked above.
-- Google Cloud Skills Boost does **not** issue Credly badges, so for those, I have provided my **Google Cloud Skills Boost public profile link** instead.
-- I have also uploaded screenshots of my learning path completions for additional proof.
+- My IBM badges are verified on **Credly** — the corresponding badge URLs are linked above.
+- Google Cloud Skills Boost does **not** issue Credly badges; therefore, I have provided my **public profile link** for verification.
+- Additionally, I have uploaded multiple screenshots showcasing my completed learning paths as further proof.
+- I have also included a video demonstrating my completed learning paths and achievements.
+
 
