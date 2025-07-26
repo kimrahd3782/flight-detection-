@@ -18,15 +18,17 @@ Completed Learning Paths:
 - Intermediate: Gemini for Google Cloud
 - Advanced: Generative AI for Developers
 
-## Google Cloud Skills Boost Learning Paths
+## ✅ Google Cloud Skills Boost Learning Paths
+*(Completed Learning Paths with official completion links)*
 
-I have also uploaded screenshots of my learning path completions for additional proof:
+3. **Beginner: Introduction to Generative AI Learning Path**  
+   [View Completion Link](https://www.cloudskillsboost.google/paths/118)
 
-![Beginner Learning Path Completion](images/beginner-learning-path.png)
+4. **Intermediate: Gemini for Google Cloud Learning Path**  
+   [View Completion Link](https://www.cloudskillsboost.google/paths/236)
 
-![Intermediate Learning Path Completion](images/intermediate-learning-path.png)
-
-![Advanced Learning Path Completion](images/advanced-learning-path.png)
+5. **Advanced: Generative AI for Developers Learning Path**  
+   [View Completion Link](https://www.cloudskillsboost.google/paths/183)
 
 
 
