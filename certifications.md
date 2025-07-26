@@ -22,7 +22,7 @@ Completed Learning Paths:
 ### 🎥 Proof of Completed Learning Paths (Video)
 
 I have also recorded a video showing all my completed learning paths and achievements:  
-[Watch the video here](google-cloud-learning-paths-completion.mp4)
+[Watch the video here](https://github.com/kimrahd3782/flight-detection-/blob/c1b41b1f9585fb94ee13de640a4d3e2bd498fa5f/proofvideo.mp4)
 
 
 
