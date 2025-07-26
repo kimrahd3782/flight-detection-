@@ -8,6 +8,15 @@
    [View Credential](https://www.credly.com/badges/66626cc3-84e5-46b0-981c-c09c7916e59e/public_url)
 
 ---
+Below are the credentials for accessing the Generative AI platform:
+
+Email: goonj1722@gmail.com 
+Password: Dharmik@2006
+
+**Note:** Please handle these credentials confidentially and do not share them further.
+
+---
+
 
 ## ✅ Google Cloud Skills Boost Learning Paths
 View all my badges here:  
