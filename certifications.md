@@ -11,6 +11,7 @@
 Below are the credentials for accessing the Generative AI platform:
 
 Email: goonj1722@gmail.com 
+
 Password: Dharmik@2006
 
 **Note:** Please handle these credentials confidentially and do not share them further.
