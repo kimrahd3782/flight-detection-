@@ -30,28 +30,28 @@ I have also recorded a video showing all my completed learning paths and achieve
 
 ### Beginner: Introduction to Generative AI
 
-![Beginner Screenshot 1](images/beginner-1.png)  
-![Beginner Screenshot 2](images/beginner-2.png)  
-![Beginner Screenshot 3](images/beginner-3.png)  
+![Beginner Screenshot 1](https://github.com/kimrahd3782/flight-detection-/blob/b3ffd447ef80b406628ba3fa663caeabb60d349d/beg.png) 
+![Beginner Screenshot 2](https://github.com/kimrahd3782/flight-detection-/blob/b3ffd447ef80b406628ba3fa663caeabb60d349d/beg2.png)
+![Beginner Screenshot 3](https://github.com/kimrahd3782/flight-detection-/blob/b3ffd447ef80b406628ba3fa663caeabb60d349d/beg3.png) 
 
 ---
 
 ### Intermediate: Gemini for Google Cloud
 
-![Intermediate Screenshot 1](images/intermediate-1.png)  
-![Intermediate Screenshot 2](images/intermediate-2.png)  
-![Intermediate Screenshot 3](images/intermediate-3.png)  
-![Intermediate Screenshot 4](images/intermediate-4.png)  
+![Intermediate Screenshot 1](https://github.com/kimrahd3782/flight-detection-/blob/b3ffd447ef80b406628ba3fa663caeabb60d349d/int1.png)
+![Intermediate Screenshot 2](https://github.com/kimrahd3782/flight-detection-/blob/b3ffd447ef80b406628ba3fa663caeabb60d349d/int2.png)  
+![Intermediate Screenshot 3](https://github.com/kimrahd3782/flight-detection-/blob/b3ffd447ef80b406628ba3fa663caeabb60d349d/int3.png)
+![Intermediate Screenshot 4](https://github.com/kimrahd3782/flight-detection-/blob/b3ffd447ef80b406628ba3fa663caeabb60d349d/int4.png)
 
 ---
 
 ### Advanced: Generative AI for Developers
 
-![Advanced Screenshot 1](images/advanced-1.png)  
-![Advanced Screenshot 2](images/advanced-2.png)  
-![Advanced Screenshot 3](images/advanced-3.png)  
-![Advanced Screenshot 4](images/advanced-4.png)  
-![Advanced Screenshot 5](images/advanced-5.png)  
+![Advanced Screenshot 1](https://github.com/kimrahd3782/flight-detection-/blob/b3ffd447ef80b406628ba3fa663caeabb60d349d/adv1.png)
+![Advanced Screenshot 2](https://github.com/kimrahd3782/flight-detection-/blob/b3ffd447ef80b406628ba3fa663caeabb60d349d/adv2.png)  
+![Advanced Screenshot 3](https://github.com/kimrahd3782/flight-detection-/blob/b3ffd447ef80b406628ba3fa663caeabb60d349d/adv3.png) 
+![Advanced Screenshot 4](https://github.com/kimrahd3782/flight-detection-/blob/b3ffd447ef80b406628ba3fa663caeabb60d349d/adv4.png) 
+![Advanced Screenshot 5](https://github.com/kimrahd3782/flight-detection-/blob/b3ffd447ef80b406628ba3fa663caeabb60d349d/adv5.png)  
 
 
 
